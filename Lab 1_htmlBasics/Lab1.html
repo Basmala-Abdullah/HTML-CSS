@@ -1,0 +1,131 @@
+<!-- Question 1 -->
+<!-- HTML (HyperText Markup Language) is the basic language used to create web pages. 
+It structures content using tags, which tell web browsers how to display things like text, images, links, and videos. 
+HTML works with CSS for styling and JavaScript for interactivity, forming the foundation of web development. 
+Each HTML document has a structure, including a <head> for background information and a <body> for visible content. 
+It’s simple to use. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Question 2 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Hello, world">
+    <meta name="author" content="Basmala Abdullah">
+    <meta name="description" content="A basic HTML page displaying 'Hello, world'.">
+    <title>Lab 1</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/002/206/022/non_2x/hello-world-icon-free-vector.jpg">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <!-- Question 2 -->
+    <h1>Hello, world</h1>
+    <!-- Question 3 -->
+    <br/>
+        <b>Bold Text. </b> <u>Underlined Text. </u> <del>Deleted Text. </del> <i>Italicized Text. </i> <mark>Highlighted Text. </mark>
+    <br/>
+    <!-- Question 4 -->
+    <!-- <b> makes text bold for visual effect. <strong>: makes text bold too but adds semantic importance (semantic tag)-->
+    <b>b -> Bold text.</b>
+    <strong>strong -> Bold and Important Text.</strong>
+    <br/>
+    <!-- <i> makes text italic for visual effect. <em>: makes italic bold too but adds semantic importance (semantic tag)-->
+    <i>i -> Italic text.</i>
+    <em>em -> Italic and Important Text.</em>
+    <br/>
+    <!-- <s> has no semantic meaning. it is for stylistic purposes. <del> has semantic meaning, it explicitly indicates deletion. -->
+    <p>The original price was <s>$100</s>, now $80.</p>
+    <p>The original text is <del>incorrect</del> corrected.</p>
+    <!-- <s> has no semantic meaning. it is for stylistic purposes. <ins> underlines newly added text. -->
+    <p>The previous price was <s>$100</s>, but the new price is <ins>$80</ins>.</p>
+    <!-- Question 5 -->
+    <p>Hi, this is my paragraph!</p>
+    <!-- Question 6 -->
+    Using break:
+    <br/>
+    Using line:
+    <hr/>
+    <!-- Question 7 -->
+    <ol type="1">
+        <li>List Item 1
+            <ol type="a">
+                <li>Nested item 1.1</li>
+                <li>Nested item 1.2</li>
+            </ol>
+        </li>
+        <li>List Item 2
+            <ol type="1">
+                <li>Nested item 2.1</li>
+                <li>Nested item 2.2
+                    <ul>
+                        <li>Nested item 2.2.1</li>
+                        <li>Nested item 2.2.2
+                            <ul>
+                                <li>Nested item 2.2.2.1</li>
+                                <li>Nested item 2.2.2.2</li>
+                            </ul>
+                        </li>
+                        <li>Nested item 2.2.3</li>
+                    </ul>
+                </li>
+                <li>Nested item 2.3</li>
+            </ol>
+        </li>
+        <li>List Item 3
+            <ul>
+                <li>Nested item 3.1</li>
+                <li>Nested item 3.1</li>
+                <li>Nested item 3.1</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Question 8 -->
+    <table border = "1">
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td class="one-half-rowspan">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+           <td class="one-half-rowspan">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
