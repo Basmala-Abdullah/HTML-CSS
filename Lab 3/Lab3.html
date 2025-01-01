@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <style>
+        .question2{
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        .question2 a {
+            background-color: #2a7dd7;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .question2 a:hover {
+            background-color: #5dabff;
+        }
+        
+        .question3 {
+            justify-content: center;
+            background-color: #2929b6;
+            padding: 10px 0;
+        }
+
+        .question3 a {
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            background-color: #7244dc;
+            border-radius: 5px;
+        }
+
+        .question3 a:hover {
+            background-color: #b468ee;
+        }
+
+        .gallery-img {
+            text-align: center;
+            width: 30%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question7-card {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+    /*Question 8 */
+        /*Style all <p> elements*/
+            p {
+            color: #383838;
+            font-size: 16px;
+        }
+
+        /*Style only the first <li> in an unordered list */
+        ul li:first-child {
+            font-weight: bold;
+            color: #015ec0;
+        }
+
+        /*Change the color of a link when hovered*/
+        a {
+            color: #7ab2ed;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Question 1 -->
+    <header>
+        <h1>Question 1</h1>
+        <p>HTML page structure</p>
+    </header>
+    <p>nav bar:</p>
+    <nav>
+        <ul>
+            <li><a href="-">Option 1</a></li>
+            <li><a href="-">Option 2</a></li>
+            <li><a href="-">Option 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Article Heading</h2>
+            <p>First paragraph of the article.</p>
+            <p>Second paragraph of the article.</p>
+        </section>
+
+        <ol>
+            <li>Step 1: Get prepared.</li>
+            <li>Step 2: Get information.</li>
+            <li>Step 3: Follow the steps.</li>
+        </ol>
+
+        <table border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Basmala</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Abdullah</td>
+                <td>B</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; HTML Web Page</p>
+    </footer>
+
+
+    <!-- Question 2 -->
+    <div class = "question2">
+        <img style="width: 300px; height: 200px;" src="https://media.istockphoto.com/id/1355384907/vector/little-girl-wearing-glasses-vector-cartoon-illustration.jpg?s=612x612&w=0&k=20&c=yVdbX-e2MNkcDB7LMz5WRhFP4yJ2hV2iUc8a41SDfn0=">
+        <h4>Basmala Abdullah</h4>
+        <p>Software Engineer.</p>
+        <a  href="-">View Profile</a>
+    </div>
+    <!-- Question 3 -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h3>Menu Bar</h3>
+    <nav class="question3">
+        <a href="-">Home</a>
+        <a href="-">List</a>
+        <a href="-">Services</a>
+        <a href="-">Help</a>
+    </nav>
+    <br/>
+    <!-- Question 4-->
+     <div style="justify-content: space-between;">
+        <img class="gallery-img" src="https://s.yimg.com/ny/api/res/1.2/VNtKsaHtgBQtNq05WhpEnw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk1Mg--/https://media.zenfs.com/en/buzzfeed_articles_778/506b1f7c7c13867337f0590c5a2186ec" alt="Image 1">
+        <p>Harry Potter</p>
+        <img class="gallery-img" src="https://s.yimg.com/ny/api/res/1.2/XfhFbibbDqr1CxldCoQkWw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk1OA--/https://media.zenfs.com/en/buzzfeed_articles_778/14b79599c82c409757ffdf4289f2f330" alt="Image 2">
+        <p>Hermione Granger</p>
+        <img class="gallery-img" src="https://i.pinimg.com/736x/09/b0/7c/09b07cd3262af03b5fc41a250469aaae.jpg" alt="Image 3">
+        <p>Ron Weasley</p>
+     </div>
+    <!-- Question 5-->
+     <h4>Forms</h4>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" >
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" >
+        <br/>
+        <label >Favorite Programming Language:</label>
+        <select>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="cpp">C++</option>
+        </select>
+        <br/>
+        <label>Skill Level:</label>
+        <div>
+            <label><input type="radio" name="skill" value="beginner" required> Beginner</label>
+            <label><input type="radio" name="skill" value="intermediate"> Intermediate</label>
+            <label><input type="radio" name="skill" value="advanced"> Advanced</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Question 5-->
+    <h3>Lists</h3>
+    <h4>My Favorite Foods</h4>
+    <ul>
+        <li>Pizza
+            <ul>
+                <li>Cheese</li>
+                <li>Tomato Sauce</li>
+            </ul>
+        </li>
+        <li>Burger
+            <ul>
+                <li>Beef</li>
+                <li>Bun</li>
+            </ul>
+        </li>
+        <li>Pasta
+            <ul>
+                <li>Spaghetti</li>
+                <li>White Sauce</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Question 6-->
+
+    <h1>Welcome to My Blog</h1>
+    <h2>About Me</h2>
+    <h3>Why I Started Writing</h3>
+    <p>Hello! My name is Basmala, and I’m a software engineer. I started this blog to document my journey.</p>
+    <p>Here, you’ll find posts about my experiences in software development and tips for aspiring engineers!</p>
+
+    <!-- Question 7-->
+    <div class="question7-card">
+        <h2>Basmala's Card</h2>
+        <p>Hello! My name is Basmala, and I’m a software engineer.</p>
+    </div>
+    
+
+
+</body>
+</html>
