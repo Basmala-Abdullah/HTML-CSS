@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <style>
+        .styled-field {
+            width: 25%;
+            padding: 1em;
+            margin: 1em;
+            border: 1px solid #2e6aff;
+            border-radius: 4px;
+        }
+
+        #submit-btn {
+            width: 25%;
+            padding: 1em;
+            margin: 1em;
+            background-color: #fcff52;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        section label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .comment-section {
+            background-image: url('background.jpeg');
+            width: 25%;
+            padding: 20px;
+            border: 2px #cccccc;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .comment {
+            background-color: #a7eaf5;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+
+
+        .question8-legend {
+            font-weight: bold;
+            color: #007BFF;
+            padding: 10px;
+        }
+
+        .question8-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .box1 {
+            width: 250px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px;
+            border: 5px solid #8f00b3;
+            box-sizing: content-box;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid #b3b000;
+            box-sizing: border-box;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 100px;
+            padding: 15px;
+            margin: 15px;
+            border: 3px solid #b3004e;
+            box-sizing: content-box;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 100px;
+            padding: 25px;
+            margin: 5px;
+            border: 2px solid #0056b3;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Question 1 -->
+    <form  method="post">
+        <label >Username:</label>
+        <input type="text" name="username" value="Default Username" required><br>
+        <label >Password:</label>
+        <input type="password" name="password" required><br>
+        <label >Confirm Password:</label>
+        <input type="password" name="confirmPassword" required><br>
+        <label >Phone Number:</label>
+        <input type="tel"  name="phone" value="123-456-7890" required><br>
+        <label >Email:</label>
+        <input type="email" name="email" required><br>
+        <label >Gender:</label><br>
+        <input type="radio" value="Male" name="gender">
+        <label >Male</label><br>
+        <input type="radio" value="Female" name="gender">
+        <label >Female</label><br>
+        <label >Date of Birth:</label>
+        <input type="date"  required><br>
+        <label>Do you like this lab:</label><br>
+        <input type="radio" value="Yes" checked>
+        <label >Yes</label><br>
+        <input type="radio" value="No">
+        <label >No</label><br>
+        <label >Rate our Session:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5"><br>
+        <label for="color">Favorite Color:</label>
+        <select name="color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select><br>
+        <label >Feedback:</label><br>
+        <textarea  name="feedback" rows="4" cols="50"></textarea><br><br>
+        <label >Upload Resume:</label>
+        <input type="file" ><br>
+        <label >Select your favorite language:</label><br>
+        <input type="checkbox" value="C++">
+        <label >C++</label><br>
+        <input type="checkbox"  value="Java">
+        <label >Java</label><br>
+        <input type="checkbox"  value="Python">
+        <label >Python</label><br><br>
+        <input type="hidden"><br><br>
+        <input type="submit" value="Submit">
+        
+
+    </form>
+    <!-- Question 2 -->
+    <form>
+        <header>
+            <h4>Registration Form</h4>
+        </header>
+        <main>
+            <fieldset>
+            <label >Name:</label>
+            <input type="text" name="Name"><br>
+            <label >Email:</label>
+            <input type="email" name="email"><br>
+            <label >Password:</label>
+            <input type="password" name="password" required><br>
+            <input type="submit" value="Submit">
+            </fieldset>
+        </main>
+        <footer>
+            <a href="_">Terms and Conditions</a>
+        </footer>
+    </form>
+    <!-- Question 3 -->
+    <form style="background-color: #a7f6ff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #2f2f2f;
+    border-radius: 8px;">
+        <header>
+            <h4>Registration Form</h4>
+        </header>
+        <main>
+            <fieldset style="padding: 20px;">
+            <label >Name:</label>
+            <input type="text" name="Name"><br>
+            <label >Email:</label>
+            <input type="email" name="email"><br>
+            <label >Password:</label>
+            <input type="password" name="password" required><br>
+            <input  type="submit" value="Submit">
+            </fieldset>
+        </main>
+        <footer>
+            <a href="_">Terms and Conditions</a>
+        </footer>
+    </form>
+    <!-- Question 4 -->
+    <form style="background-color: #a7f6ff;
+    width: 50%;
+    padding: 2em;
+    margin: 2rem;
+    border: 1px solid #2f2f2f;
+    border-radius: 8px;">
+        <header>
+            <h4>Registration Form</h4>
+        </header>
+        <main>
+            <fieldset>
+            <label >Name:</label>
+            <input type="text" name="Name"><br>
+            <label >Email:</label>
+            <input type="email" name="email"><br>
+            <label >Password:</label>
+            <input type="password" name="password" required><br>
+            <input  type="submit" value="Submit">
+            </fieldset>
+        </main>
+        <footer>
+            <a href="_">Terms and Conditions</a>
+        </footer>
+    </form>
+    <!-- Question 5 -->
+    <form class="styled-field">
+        <header>
+            <h4>Registration Form</h4>
+        </header>
+        <main>
+            <section>
+            <label >Name:</label>
+            <input type="text" name="Name"><br>
+            <label >Email:</label>
+            <input type="email" name="email"><br>
+            <label >Password:</label>
+            <input type="password" name="password" required><br>
+            <input  type="submit" value="Submit"id="submit-btn">
+            </section>
+        </main>
+        <footer>
+            <a href="_">Terms and Conditions</a>
+        </footer>
+    </form>
+    <!-- Question 6 -->
+    <form>
+        <header>
+            <h4>Survey Form</h4>
+        </header>
+        <main>
+            <section>
+                <label>What is your favorite day of the week?</label>
+                <input type="radio" name="day" value="saturday"> Saturday<br>
+                <input type="radio" name="day" value="sunday"> Sunday<br>
+                <input type="radio" name="day" value="monday"> Monday<br>
+                <input type="radio" name="day" value="tuesday"> Tuesday<br>
+                <input type="radio" name="day" value="wensday"> Wensday<br>
+                <input type="radio" name="day" value="thursday"> Thursday<br>
+                <input type="radio" name="day" value="friday"> Friday<br>
+
+            </section>
+            <section>
+                <label>Which activities do you enjoy?</label>
+                <input type="checkbox" name="activity" value="reading"> Reading<br>
+                <input type="checkbox" name="activity" value="sports"> Sports<br>
+                <input type="checkbox" name="activity" value="traveling"> Traveling<br>
+            </section>
+            <input type="submit" value="Submit">
+        </main>
+    </form>
+
+    <!-- Question 7 -->
+     <hr/>
+    <aside class="comment-section">
+        <h2>Comments</h2>
+
+        <section >
+            <h3>Leave a Comment</h3>
+            <article>
+                <form>
+                    <input  class="comment" type="text" name="username" placeholder="Your Name" >
+                    <br/><br/>
+                    <textarea class="comment" name="comment" placeholder="Your Comment" rows="4" ></textarea>
+                    <br/><br/>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </aside>
+    <!-- Question 8 -->
+    <form method="post">
+        <fieldset >
+            <legend class ="question8-legend">Personal Information</legend>
+
+            <label class ="question8-label">Full Name:</label>
+            <input type="text" placeholder="Enter your full name" >
+
+            <label class ="question8-label" for="email">Email Address:</label>
+            <input type="email" placeholder="Enter your email" >
+        </fieldset>
+
+        <fieldset >
+            <legend class ="question8-legend">Feedback</legend>
+
+            <label class ="question8-label" for="feedback">Your Comments:</label><br/>
+            <textarea id="feedback" name="feedback" rows="5" cols="25" placeholder="Write your feedback here" ></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Question 9 -->
+    <h1>Box Model Practice</h1>
+
+    <div>
+        <div class="box1">Box 1<br>box-sizing: content-box</div>
+        <div class="box2">Box 2<br>box-sizing: border-box</div>
+        <div class="box3">Box 3<br>box-sizing: content-box</div>
+        <div class="box4">Box 4<br>box-sizing: border-box</div>
+    </div>
+</body>
+</html>
